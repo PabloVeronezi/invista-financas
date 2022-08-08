@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: $rubik-font;
+  color: $sec-color;
+  word-wrap: break-word;
+  overflow-wrap: break-word; //Essas duas propriedades (word-wrap e overflow-wrap) com o valor break-word, irá quebrar a linha e não aumentará o container.
+}
+
+.container {
+  height: 100vh;
+  background-color: $qua-color;
+  padding-inline: 2rem;
+}

@@ -1,0 +1,146 @@
+header {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 2rem;
+
+
+  img {
+    width: 20rem;
+  }
+
+
+  h1 {
+    font-family: $roboto-font;
+    font-size: 2.5rem;
+    color: $sec-color;
+    text-align: center;
+    word-break: break-all;
+  }
+
+  .mouse {
+    display: none;
+    width: 3rem;
+    height: 5rem;
+    border: .3rem solid #333;
+    border-radius: 6rem;
+    position: relative;
+
+    &::before {
+      content: "";
+      width: .7rem;
+      height: 1rem;
+      position: absolute;
+      top: 1rem;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: #333;
+      border-radius: 50%;
+      animation: mouse 1.5s infinite;
+    }
+  }
+
+  .touch {
+    width: 5rem;
+    animation: touch 2s infinite alternate ease-in-out;
+  }
+}
+
+@media only screen and (min-width: 400px) and (max-width: 600px) {
+  header {
+
+    img {
+      width: 20rem;
+    }
+  }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1023px) {
+  header {
+
+    img {
+      width: 30rem;
+    }
+
+    h1 {
+      font-size: 3rem;
+    }
+
+    .touch {
+      width: 5rem;
+    }
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  header {
+
+    img {
+      width: 30rem;
+    }
+
+    h1 {
+      font-size: 3.5rem;
+    }
+
+    .mouse {
+      display: block;
+    }
+
+    .touch {
+      display: none;
+    }
+  }
+}
+
+@media only screen and (min-width: 2000px) {
+  header {
+
+    img {
+      width: 70rem;
+    }
+
+    h1 {
+      font-size: 8rem;
+    }
+
+    .mouse {
+      width: 6rem;
+      height: 10rem;
+
+      &::before {
+        width: 1rem;
+        height: 2rem;
+      }
+    }
+  }
+}
+
+
+@keyframes mouse {
+
+  from {
+    opacity: 1;
+    top: 1rem;
+  }
+
+  to {
+    opacity: 0;
+    top: 2rem;
+  }
+
+}
+
+@keyframes touch {
+
+  from {
+    transform: translateY(0);
+  }
+
+  to {
+    transform: translateY(-3rem);
+  }
+
+}

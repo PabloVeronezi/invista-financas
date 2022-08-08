@@ -1,2 +1,2 @@
 # invista-financas
-Site desenvolvivo para ajudar o usuário a economizar dinheiro e evitar as dívidas.
+Aplicação Web voltada para ajudar o usuário a economizar seu salário, baseado na regra 50 - 30 - 20.
