@@ -1,3 +1,0 @@
-$(function () {
-  $('.money-mask').maskMoney();
-})
