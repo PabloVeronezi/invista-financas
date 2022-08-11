@@ -100,7 +100,7 @@ header .touch {
 }
 @media only screen and (min-width: 2000px) {
   header img {
-    width: 70rem;
+    width: 60rem;
   }
   header h1 {
     font-size: 8rem;
@@ -252,6 +252,7 @@ header .touch {
   align-items: center;
   justify-content: center;
   row-gap: 2rem;
+  position: relative;
 }
 .main-content h2 {
   font-family: "Roboto", sans-serif;
@@ -322,6 +323,24 @@ header .touch {
   background-color: #1c3762;
   color: #fff;
 }
+.main-content #btn-toTop {
+  position: absolute;
+  bottom: 5rem;
+  width: 4rem;
+  height: 4rem;
+  border: 2px solid #1c3762;
+  border-radius: 50%;
+  background-color: rgba(31, 171, 137, 0.7);
+  cursor: pointer;
+  text-align: center;
+  line-height: 4.5rem;
+  -webkit-animation: blink 1s infinite alternate;
+          animation: blink 1s infinite alternate;
+}
+.main-content #btn-toTop i {
+  color: #1c3762;
+  font-size: 2rem;
+}
 
 @media screen and (min-width: 600px) {
   .main-content h2 {
@@ -352,14 +371,14 @@ header .touch {
 }
 @media screen and (min-width: 1000px) {
   .main-content h2 {
-    font-size: 6rem;
+    font-size: 5.5rem;
   }
   .main-content p {
-    font-size: 2.5rem;
+    font-size: 2.3rem;
   }
   .main-content form input {
-    width: 28rem;
-    height: 4rem;
+    width: 25rem;
+    height: 3.5rem;
     font-size: 2rem;
   }
   .main-content form input::-moz-placeholder {
@@ -372,9 +391,10 @@ header .touch {
     font-size: 2rem;
   }
   .main-content form button {
-    width: 18rem;
-    height: 4rem;
-    font-size: 2rem;
+    width: 15rem;
+    height: 3rem;
+    font-size: 1.5rem;
+    line-height: 2rem;
   }
 }
 @media screen and (min-width: 1400px) {
@@ -429,5 +449,21 @@ header .touch {
     width: 40rem;
     height: 8rem;
     font-size: 3.5rem;
+  }
+}
+@-webkit-keyframes blink {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes blink {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }/*# sourceMappingURL=style.css.map */
