@@ -100,10 +100,10 @@ header .touch {
 }
 @media only screen and (min-width: 2000px) {
   header img {
-    width: 60rem;
+    width: 55rem;
   }
   header h1 {
-    font-size: 8rem;
+    font-size: 6.5rem;
   }
   header .mouse {
     width: 6rem;
@@ -323,24 +323,6 @@ header .touch {
   background-color: #1c3762;
   color: #fff;
 }
-.main-content #btn-toTop {
-  position: absolute;
-  bottom: 5rem;
-  width: 4rem;
-  height: 4rem;
-  border: 2px solid #1c3762;
-  border-radius: 50%;
-  background-color: rgba(31, 171, 137, 0.7);
-  cursor: pointer;
-  text-align: center;
-  line-height: 4.5rem;
-  -webkit-animation: blink 1s infinite alternate;
-          animation: blink 1s infinite alternate;
-}
-.main-content #btn-toTop i {
-  color: #1c3762;
-  font-size: 2rem;
-}
 
 @media screen and (min-width: 600px) {
   .main-content h2 {
@@ -425,11 +407,17 @@ header .touch {
   }
 }
 @media screen and (min-width: 2000px) {
+  .main-content {
+    row-gap: 5rem;
+  }
   .main-content h2 {
-    font-size: 13rem;
+    font-size: 12rem;
   }
   .main-content p {
     font-size: 5rem;
+  }
+  .main-content form {
+    row-gap: 3rem;
   }
   .main-content form input {
     width: 55rem;
@@ -465,5 +453,182 @@ header .touch {
   }
   to {
     opacity: 1;
+  }
+}
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  row-gap: 8rem;
+  height: 100%;
+}
+.footer .credits {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 1rem;
+}
+.footer .credits h2 {
+  font-size: 2.5rem;
+  text-align: center;
+}
+.footer .credits .credits-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  -moz-column-gap: 2rem;
+       column-gap: 2rem;
+}
+.footer .credits .credits-links a {
+  text-decoration: none;
+}
+.footer .credits .credits-links a img {
+  width: 10rem;
+}
+.footer .madeBy {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 1rem;
+}
+.footer .madeBy h2 {
+  font-size: 2.5rem;
+  text-align: center;
+}
+.footer .madeBy p {
+  font-size: 2rem;
+  font-weight: 500;
+  color: #1FAB89;
+}
+.footer .madeBy .madeBy-links {
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 2rem;
+       column-gap: 2rem;
+}
+.footer .madeBy .madeBy-links a {
+  text-decoration: none;
+}
+.footer .madeBy .madeBy-links a .fa-brands {
+  font-size: 2.5rem;
+}
+.footer .madeBy .madeBy-links a .fa-linkedin {
+  color: #0A66C2;
+}
+.footer .madeBy .madeBy-links a .fa-github {
+  color: black;
+}
+.footer #btn-toTop {
+  position: absolute;
+  bottom: 2rem;
+  width: 4rem;
+  height: 4rem;
+  text-align: center;
+  -webkit-animation: blink 1s infinite alternate;
+          animation: blink 1s infinite alternate;
+  cursor: pointer;
+  border: 1px solid #1c3762;
+  border-radius: 50%;
+  background-color: transparent;
+}
+.footer #btn-toTop i {
+  color: #1c3762;
+  font-size: 2rem;
+  line-height: 2rem;
+}
+
+@media screen and (min-width: 1000px) {
+  .footer {
+    row-gap: 5rem;
+  }
+  .footer .credits h2 {
+    font-size: 3.5rem;
+  }
+  .footer .credits .credits-links a img {
+    width: 14rem;
+  }
+  .footer .madeBy h2 {
+    font-size: 3.5rem;
+  }
+  .footer .madeBy p {
+    font-size: 3rem;
+  }
+  .footer .madeBy .madeBy-links a .fa-brands {
+    font-size: 3.5rem;
+  }
+  .footer #btn-toTop {
+    bottom: 6rem;
+    width: 5rem;
+    height: 5rem;
+  }
+  .footer #btn-toTop i {
+    font-size: 3rem;
+    line-height: 3rem;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .footer .credits h2 {
+    font-size: 5rem;
+  }
+  .footer .credits .credits-links a img {
+    width: 20rem;
+  }
+  .footer .madeBy h2 {
+    font-size: 5rem;
+  }
+  .footer .madeBy p {
+    font-size: 4rem;
+  }
+  .footer .madeBy .madeBy-links a .fa-brands {
+    font-size: 5rem;
+  }
+  .footer #btn-toTop {
+    bottom: 8rem;
+    width: 6rem;
+    height: 6rem;
+  }
+  .footer #btn-toTop i {
+    font-size: 3.5rem;
+    line-height: 3.5rem;
+  }
+}
+@media screen and (min-width: 2000px) {
+  .footer .credits h2 {
+    font-size: 10rem;
+  }
+  .footer .credits .credits-links {
+    -moz-column-gap: 5rem;
+         column-gap: 5rem;
+  }
+  .footer .credits .credits-links a img {
+    width: 30rem;
+  }
+  .footer .madeBy h2 {
+    font-size: 10rem;
+  }
+  .footer .madeBy p {
+    font-size: 8rem;
+  }
+  .footer .madeBy .madeBy-links {
+    -moz-column-gap: 4rem;
+         column-gap: 4rem;
+  }
+  .footer .madeBy .madeBy-links a .fa-brands {
+    font-size: 10rem;
+  }
+  .footer #btn-toTop {
+    bottom: 15rem;
+    width: 12rem;
+    height: 12rem;
+    border: 3px solid;
+  }
+  .footer #btn-toTop i {
+    font-size: 5rem;
+    line-height: 5rem;
   }
 }/*# sourceMappingURL=style.css.map */
