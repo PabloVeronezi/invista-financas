@@ -219,8 +219,6 @@
 VMasker(document.querySelector(".money-mask")).maskMoney({
   // Decimal precision -> "90"
   precision: 2,
-  // Decimal separator -> ",90"
-  separator: ',',
   // Number delimiter -> "12.345.678"
   delimiter: '.',
   // Money unit -> "R$ 12.345.678,90"

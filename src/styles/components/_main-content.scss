@@ -7,6 +7,7 @@
   row-gap: 2rem;
   position: relative;
 
+
   h2 {
     font-family: $roboto-font;
     font-size: 3.5rem;
@@ -130,6 +131,13 @@
         height: 3rem;
         font-size: 1.5rem;
         line-height: 2rem;
+        cursor: pointer;
+
+        &:active {
+          transform: scale(.98);
+          box-shadow: 3px 2px 22px 1px rgba($color: #000000, $alpha: .24);
+          //Efeito botão pressionado
+        }
       }
     }
 

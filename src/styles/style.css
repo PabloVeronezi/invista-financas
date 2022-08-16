@@ -377,6 +377,11 @@ header .touch {
     height: 3rem;
     font-size: 1.5rem;
     line-height: 2rem;
+    cursor: pointer;
+  }
+  .main-content form button:active {
+    transform: scale(0.98);
+    box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
   }
 }
 @media screen and (min-width: 1400px) {
@@ -455,6 +460,19 @@ header .touch {
     opacity: 1;
   }
 }
+.graphic-container {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #D7FBE8;
+  padding-inline: 2rem;
+}
+.graphic-container--content {
+  display: flex;
+  flex-direction: column;
+}
+
 .footer {
   display: flex;
   flex-direction: column;

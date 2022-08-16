@@ -1,0 +1,14 @@
+.graphic-container {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: $qua-color;
+  padding-inline: 2rem;
+
+  &--content {
+    display: flex;
+    flex-direction: column;
+  }
+
+}

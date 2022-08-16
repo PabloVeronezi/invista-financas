@@ -13,6 +13,8 @@
   <link rel="shortcut icon" href="src/img/logo-site.png" type="image/x-icon">
   <!-- Font Awesome -->
   <script src="https://kit.fontawesome.com/3262079615.js" crossorigin="anonymous"></script>
+  <!-- Chart.JS -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
   <title>Invista Finanças - Aprenda a manipular seu dinheiro</title>
 </head>
@@ -118,15 +120,17 @@
       </p>
 
       <form class="lax lax_preset_fadeInOut:180:0">
-        <input type="text" class="money-mask" placeholder="R$ 0,00" maxlength="13">
+        <input type="text" class="money-mask" placeholder="R$ 0,00" maxlength="13" id="input-salary">
 
-        <button type="submit">Calcular</button>
+        <button type="submit" id="btn-salary">Calcular</button>
       </form>
-
-
-
     </div>
+  </section>
 
+  <section class="graphic-container">
+    <div class="graphic-container--content">
+      <canvas id="myChart"></canvas>
+    </div>
   </section>
 
   <section class="container">
@@ -172,6 +176,8 @@
   <script src="src/js/parallax.js"></script>
   <script src="src/js/vanilla-masker.js"></script>
   <script src="src/js/scrollToTop.js"></script>
+  <script src="src/js/calculateSalary.js"></script>
+
 </body>
 
 </html>
